@@ -7,6 +7,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* When clicking a link and it scrolls up, it is smooth */
+
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -23,6 +29,14 @@ img {
 
 p {
     line-height: 1.5;
+}  
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .nav__container {
@@ -73,6 +87,14 @@ li {
     text-decoration: none;
 } 
 /* Make sure this block of code is after '.       nav__link:hover, otherwise it will not work */ 
+
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    text-align: center;
+}
+
 
 /* LANDING */
 
@@ -150,6 +172,18 @@ button:active {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.no-cursor {
+    cursor: not-allowed;
+}
+
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /* HIGHLIGHTS */
 
@@ -274,6 +308,42 @@ button:active {
    text-decoration: line-through; 
    padding-right: 6px;
    color: #bfbfbf;
+}
+
+#explore {
+    background-color: rgba(115, 66, 214, 0.1); 
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #242424;
+}
+
+.footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1);
+}
+
+/*Grayscale changes everything to dark colors, and inverting that turns it into light colors*/
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__link,
+.footer__copyright {
+    color: #fff;
+}
+
+.footer__list {
+   margin: 20px 0 24px 0px; 
+}
+
+.footer__link {
+    padding: 0 8px;
 }
 
 
